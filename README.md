@@ -60,7 +60,7 @@ Machine de développement :
 | CPU | Intel Core i7 |
 | RAM | 64 Go DDR4 |
 | GPU | NVIDIA GTX 1650 4 Go |
-| OS | Ubuntu 24.04 LTS (WSL2) |
+| OS | Ubuntu 22.04 LTS (WSL2) |
 | Stockage | SSD NVMe |
 
 ---
