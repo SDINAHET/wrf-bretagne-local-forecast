@@ -1,0 +1,11 @@
+services:
+  wrf:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.wrf
+    container_name: wrf_bretagne_v1
+    volumes:
+      - .:/wrf-project
+    working_dir: /wrf-project
+    stdin_open: true
+    tty: true

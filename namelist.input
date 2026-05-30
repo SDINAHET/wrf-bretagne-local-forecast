@@ -1,0 +1,65 @@
+&time_control
+ run_days                            = 1,
+ run_hours                           = 0,
+ start_year                          = 2026,
+ start_month                         = 05,
+ start_day                           = 30,
+ start_hour                          = 00,
+ end_year                            = 2026,
+ end_month                           = 05,
+ end_day                             = 31,
+ end_hour                            = 00,
+ interval_seconds                    = 10800,
+ input_from_file                     = .true.,
+ history_interval                    = 60,
+ frames_per_outfile                  = 1,
+ restart                             = .false.,
+ io_form_history                     = 2,
+ io_form_input                       = 2,
+ io_form_boundary                    = 2,
+/
+
+&domains
+ time_step                           = 54,
+ max_dom                             = 1,
+ e_we                                = 120,
+ e_sn                                = 100,
+ e_vert                              = 35,
+ dx                                  = 9000,
+ dy                                  = 9000,
+ grid_id                             = 1,
+ parent_id                           = 1,
+ parent_grid_ratio                   = 1,
+ i_parent_start                      = 1,
+ j_parent_start                      = 1,
+/
+
+&physics
+ mp_physics                          = 8,
+ ra_lw_physics                       = 4,
+ ra_sw_physics                       = 4,
+ radt                                = 9,
+ sf_sfclay_physics                   = 1,
+ sf_surface_physics                  = 2,
+ bl_pbl_physics                      = 1,
+ bldt                                = 0,
+ cu_physics                          = 1,
+ cudt                                = 5,
+/
+
+&dynamics
+ hybrid_opt                          = 2,
+ w_damping                           = 0,
+ diff_opt                            = 1,
+ km_opt                              = 4,
+/
+
+&bdy_control
+ spec_bdy_width                      = 5,
+ specified                           = .true.,
+/
+
+&namelist_quilt
+ nio_tasks_per_group                 = 0,
+ nio_groups                          = 1,
+/
